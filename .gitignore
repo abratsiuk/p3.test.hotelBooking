@@ -1,0 +1,43 @@
+# Игнорировать папки сборки и временные файлы
+bin/
+obj/
+*.log
+*.vs
+*.user
+.vscode/
+
+# Конфигурационные файлы Rider и VS Code
+.idea/
+.vscode/
+
+# Файлы среды разработки
+.env
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Игнорировать временные файлы пакетов NuGet
+*.nupkg
+packages/
+.nuget/
+
+# Игнорировать файлы Entity Framework Core Migrations
+Migrations/
+
+# Игнорировать локальные файлы базы данных
+*.db
+*.mdf
+*.ldf
+*.sqlite
+
+# PostgreSQL файлы
+pgdata/
+pglogs/
+
+# Игнорировать файл конфигурации с секретными данными
+appsettings.Development.json
+appsettings.Local.json
+
+# Игнорировать файлы Docker, если не используете Docker
+docker-compose.override.yml
