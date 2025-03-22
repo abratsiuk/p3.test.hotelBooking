@@ -28,3 +28,15 @@ npm start
 https://railway.com/new
 github
 
+- не подошел, он платный
+
+-------------------
+на render.com
+
+![](_md_img/flow_images/flow%202025-03-22-13-53-30.png)
+https://dashboard.render.com/web/srv-cvfa8u7noe9s73benl40/deploys/dep-cvfa8ufnoe9s73benl70
+
+----------------
+https://p3-test-hotelbooking.onrender.com
+
+![](_md_img/flow_images/flow%202025-03-22-13-58-08.png)

@@ -26,13 +26,23 @@ mongoose
 
 const Booking = require('./models/Booking');
 
+// создать новое бронирование
 app.post('/api/bookings', async (req, res) => {
-    const booking = new Booking(req.body);
-    await booking.save();
-    res.status(201).json(booking);
+    try {
+        const booking = new Booking(req.body);
+        await booking.save();
+        res.status(201).json(booking);
+    } catch (error) {
+        res.status(400).json({ error: error.message });
+    }
 });
 
+// получить все бронирования
 app.get('/api/bookings', async (req, res) => {
-    const bookings = await Booking.find();
-    res.json(bookings);
+    try {
+        const bookings = await Booking.find();
+        res.json(bookings);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
 });
